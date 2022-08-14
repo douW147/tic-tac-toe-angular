@@ -1,0 +1,18 @@
+.game-field {
+    display: inline-block;
+    text-align: center;
+    margin: 5%;
+    width: auto;
+}
+
+.game-field__game-row {
+    border-bottom: 7px solid var(--border);
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-field__game-row:last-child {
+    border-bottom: none;
+}
