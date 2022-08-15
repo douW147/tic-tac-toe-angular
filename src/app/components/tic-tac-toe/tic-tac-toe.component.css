@@ -1,0 +1,64 @@
+.game-controls-container {
+    display: flex;
+    margin: 3% 0;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.game-field {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-auto-rows: 60px;
+    background-color: #000;
+    grid-gap: 5px;
+}
+
+.game-field__game-cell {
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-inputs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-buttons-container {
+    display: flex;
+    margin: 15px 0;
+}
+
+.game-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.game-label {
+    font-size: 0.3rem;
+    margin-right: 10px;
+}
+
+.game-input {
+    width: 100px;
+    height: 25px;
+    font-size: 0.3rem;
+    font-weight: bold;
+    border: 3px solid var(--border)
+}
+
+.game-button {
+    border: 3px solid var(--border);
+    font-size: 0.3rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.game-button_disable {
+    background-color: var(--border);
+}

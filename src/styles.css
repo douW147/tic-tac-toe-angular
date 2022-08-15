@@ -8,27 +8,20 @@
     --o-color: #fc3437;
     font-family: 'Rubik', sans-serif;
     font-weight: 800;
+    font-size: 4rem;
 }
 
 body {
     background-color: var(--bg);
 }
 
-.container {
+.game-field-container {
     text-align: center;
+    display: inline-block;
 }
 
-app-game-cell {
-    border-right: 7px solid var(--border);
-    font-size: 3rem;
-    min-width: 50px;
-    min-height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.game-field__game-row> app-game-cell:last-child {
-    border-right: none;
+app-tic-tac-toe {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
 }

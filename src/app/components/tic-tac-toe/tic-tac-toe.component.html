@@ -1,3 +1,25 @@
-<div class="container">
-    <app-game-field [fieldSize]="fieldSize" [gameField]="gameField"></app-game-field>
+<h1 class="game-message">{{gameMessage}}</h1>
+<div class="game-controls-container">
+    <div class="game-inputs-container">
+        <div class="game-input-container">
+            <label for="fieldSizeInput" class="game-label">Field size: </label>
+            <input type="number" id="fieldSizeInput" class="game-input" name="fieldSize" [(ngModel)]="inputValueFieldSize" (ngModelChange)="onFieldSizeChange()">
+        </div>
+        <div class="game-input-container">
+            <label for="cellsForWinInput" class="game-label">Cells for win: </label>
+            <input type="number" id="cellsForWinInput" class="game-input" name="cellsForWin" [(ngModel)]="inputValueCellsForWin" (ngModelChange)="onCellsForWinChange()">
+        </div>
+    </div>
+    <div class="game-buttons-container">
+        <button class="game-button game-button_disable" id="1vs1Button" (click)="on1vs1Click($event)">1 vs 1</button>
+        <button class="game-button" id="1vsPcButton" (click)="on1vsPcClick($event)">1 vs PC</button>
+        <button class="game-button" id="refreshButton" (click)="refresh()">Refresh</button>
+    </div>
+</div>
+<div class="game-field-container">
+    <div class="game-field" [style.grid-template-columns] = "'repeat(' + fieldSize + ', 60px)'">
+        <div [style.color]="gameField[i] === 'X' ? 'red' : 'blue'" [id]="'cell' + i" *ngFor="let cell of gameField; let i = index" (click)="onCellClick($event)" class="game-field__game-cell">
+            {{gameField[i]}}
+        </div>
+    </div>
 </div>
