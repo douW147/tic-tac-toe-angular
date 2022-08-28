@@ -28,8 +28,6 @@ export class TicTacToeComponent implements OnInit {
     gameMessage: string = "";
 
     ngOnInit(): void {
-        // const cells: HTMLElement[] = document.getElementsByClassName("game-field__game-cell") ;
-        // const cell = cells[0]
     }
 
     refresh() {

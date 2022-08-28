@@ -1,16 +1,15 @@
 @import url("./reset.css");
 
 :root {
-    --button-disabled: #bbb;
-    --bg: #ebebeb;
-    --border: #656565;
-    --x-color: #3499fe;
-    --o-color: #fc3437;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 800;
-    font-size: 4rem;
-}
+    --sun: #FF9F1C;
+    --gray: #011627;
+    --teal: #2EC4B5;
+    --red: #E71D35;
+    --white: #FDFFFC;
+    --text-white: #fff;
+    --transparent: #00000000;
 
+}
 body {
     background-color: var(--bg);
 }
